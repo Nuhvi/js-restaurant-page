@@ -1,0 +1,25 @@
+{
+  "name": "js-restaurant-page",
+  "version": "1.0.0",
+  "description": "Using JS to generate entire content of a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nazeh/js-restaurant-page.git"
+  },
+  "author": "ar nazeh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nazeh/js-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/Nazeh/js-restaurant-page#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "lodash": "^4.17.15"
+  }
+}
