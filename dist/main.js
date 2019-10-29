@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/scss/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".tab--highlight {\\n  background-color: #a20000;\\n  font-weight: bold; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/scss/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -121,6 +121,18 @@ eval("\n\nvar stylesInDom = {};\n\nvar isOldIE = function isOldIE() {\n  var mem
 
 /***/ }),
 
+/***/ "./src/js/components/nav.js":
+/*!**********************************!*\
+  !*** ./src/js/components/nav.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar generateTab = function generateTab(name, currentTab) {\n  var Class = \" \".concat(currentTab === name ? 'class=\"tab--highlight \"' : '');\n  return \"<li  \".concat(Class, \">\\n            <a data-role=\\\"tab\\\" data-id=\\\"\").concat(name, \"\\\" href=\\\"#!\\\">\\n                \").concat(name, \"\\n            </a>\\n          </li>\");\n};\n\nvar generateNav = function generateNav(currentTab) {\n  return \"\\n    <header>\\n        <nav class=\\\"red\\\">\\n            <div class=\\\"container nav-wrapper\\\">\\n                <a href=\\\"#!\\\" class=\\\"brand-logo\\\">Some Restuarant</a>\\n                <a href=\\\"#\\\" data-target=\\\"mobile-demo\\\" \\n                    class=\\\"sidenav-trigger\\\">\\n                    <i class=\\\"material-icons\\\">menu</i>\\n                </a>\\n                <ul class=\\\"right hide-on-med-and-down\\\">\\n                    \".concat(generateTab('Home', currentTab), \"\\n                    \").concat(generateTab('Menu', currentTab), \"\\n                    \").concat(generateTab('Contact', currentTab), \"\\n                </ul>\\n            </div>\\n        </nav>\\n\\n        <ul class=\\\"sidenav\\\" id=\\\"mobile-demo\\\">\\n            <li><a href=\\\"#!\\\">Home</a></li>\\n            <li><a href=\\\"#!\\\">Menu</a></li>\\n            <li><a href=\\\"#!\\\">Contact</a></li>\\n        </ul>\\n    </header>\\n    \");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (generateNav);\n\n//# sourceURL=webpack:///./src/js/components/nav.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -129,7 +141,19 @@ eval("\n\nvar stylesInDom = {};\n\nvar isOldIE = function isOldIE() {\n  var mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _pages_page_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/page.js */ \"./src/js/pages/page.js\");\n\n\ndocument.addEventListener('click', function (e) {\n  var target = e.target;\n\n  if (target.getAttribute('data-role') === 'tab') {\n    var tabName = target.getAttribute('data-id');\n    _pages_page_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].render(tabName);\n  }\n});\n_pages_page_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].render('Home');\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/pages/page.js":
+/*!******************************!*\
+  !*** ./src/js/pages/page.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_nav_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/nav.js */ \"./src/js/components/nav.js\");\n\n\nvar Page = function () {\n  var CONTENT = document.getElementById('content');\n\n  var render = function render() {\n    var pageName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Home';\n    var Nav = Object(_components_nav_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(pageName);\n    var content = Nav;\n    CONTENT.innerHTML = content;\n  };\n\n  return {\n    render: render\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Page);\n\n//# sourceURL=webpack:///./src/js/pages/page.js?");
 
 /***/ }),
 
