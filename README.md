@@ -13,7 +13,7 @@
 
 > Using JS to generate entire content of a webpage
 
-### 🏠 [Homepage](https://github.com/Nazeh/js-restaurant-page#readme)
+### 🏠 [Homepage](https://raw.githack.com/Nazeh/js-restaurant-page/restaurant/dist/index.html)
 
 ## Install
 
