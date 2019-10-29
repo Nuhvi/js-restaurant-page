@@ -18,9 +18,9 @@ const generateNav = (currentTab) => `
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    ${generateTab('Home', currentTab)}
-                    ${generateTab('Menu', currentTab)}
-                    ${generateTab('Contact', currentTab)}
+                    ${generateTab('home', currentTab)}
+                    ${generateTab('menu', currentTab)}
+                    ${generateTab('contact', currentTab)}
                 </ul>
             </div>
         </nav>

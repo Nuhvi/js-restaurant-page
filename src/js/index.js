@@ -9,4 +9,4 @@ document.addEventListener('click', (e) => {
   }
 });
 
-Page.render('Home');
+Page.render('home');
