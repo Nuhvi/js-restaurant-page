@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".tab--highlight {\\n  background-color: #a20000;\\n  font-weight: bold; }\\n\\nli {\\n  text-transform: capitalize; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/scss/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".tab--highlight {\\n  background-color: #a20000;\\n  font-weight: bold; }\\n\\nli {\\n  text-transform: capitalize; }\\n\\nimg {\\n  height: 400px;\\n  width: 400px; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/scss/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -141,7 +141,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar generateMain = function g
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar generateTab = function generateTab(name, currentTab) {\n  var Class = \" \".concat(currentTab === name ? 'class=\"tab--highlight \"' : '');\n  return \"<li  \".concat(Class, \">\\n            <a data-role=\\\"tab\\\" data-id=\\\"\").concat(name, \"\\\" href=\\\"#!\\\">\\n                \").concat(name, \"\\n            </a>\\n          </li>\");\n};\n\nvar generateNav = function generateNav(currentTab) {\n  return \"\\n    <header>\\n        <nav class=\\\"red\\\">\\n            <div class=\\\"container nav-wrapper\\\">\\n                <a href=\\\"#!\\\" class=\\\"brand-logo\\\">Some Restuarant</a>\\n                <a href=\\\"#\\\" data-target=\\\"mobile-demo\\\" \\n                    class=\\\"sidenav-trigger\\\">\\n                    <i class=\\\"material-icons\\\">menu</i>\\n                </a>\\n                <ul class=\\\"right hide-on-med-and-down\\\">\\n                    \".concat(generateTab('home', currentTab), \"\\n                    \").concat(generateTab('menu', currentTab), \"\\n                    \").concat(generateTab('contact', currentTab), \"\\n                </ul>\\n            </div>\\n        </nav>\\n\\n        <ul class=\\\"sidenav\\\" id=\\\"mobile-demo\\\">\\n            <li><a href=\\\"#!\\\">Home</a></li>\\n            <li><a href=\\\"#!\\\">Menu</a></li>\\n            <li><a href=\\\"#!\\\">Contact</a></li>\\n        </ul>\\n    </header>\\n    \");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (generateNav);\n\n//# sourceURL=webpack:///./src/js/components/nav.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar generateTab = function generateTab(name, currentTab) {\n  var Class = \" \".concat(currentTab === name ? 'class=\"tab--highlight \"' : '');\n  return \"<li  \".concat(Class, \">\\n            <a data-role=\\\"tab\\\" data-id=\\\"\").concat(name, \"\\\" href=\\\"#!\\\">\\n                \").concat(name, \"\\n            </a>\\n          </li>\");\n};\n\nvar generateNav = function generateNav(currentTab) {\n  return \"\\n    <header>\\n        <nav class=\\\"red\\\">\\n            <div class=\\\"container nav-wrapper\\\">\\n                <a href=\\\"#!\\\" class=\\\"brand-logo left\\\">Some Restuarant</a>\\n                <ul class=\\\"right\\\">\\n                    \".concat(generateTab('home', currentTab), \"\\n                    \").concat(generateTab('menu', currentTab), \"\\n                    \").concat(generateTab('contact', currentTab), \"\\n                </ul>\\n            </div>\\n        </nav>\\n    </header>\\n    \");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (generateNav);\n\n//# sourceURL=webpack:///./src/js/components/nav.js?");
 
 /***/ }),
 
@@ -165,7 +165,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar H1 = '<h1>Contact</h1>';\n\nvar contactPage = function contactPage() {\n  return \"\\n    \".concat(H1, \"\\n\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (contactPage);\n\n//# sourceURL=webpack:///./src/js/pages/contactPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar H1 = \"<h1>\\nReach out via kitchen@somerestaurant.org and we'll fix up something for you.\\n</h1>\";\n\nvar contactPage = function contactPage() {\n  return \"\\n    \".concat(H1, \"\\n\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (contactPage);\n\n//# sourceURL=webpack:///./src/js/pages/contactPage.js?");
 
 /***/ }),
 
@@ -177,7 +177,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar H1 = '<h1>Contact</h1>';\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar H1 = '<h1>Just Another Restaurant!</h1>';\nvar H2 = '<h2>Nothing Special Really!</h2>';\n\nvar mainPage = function mainPage() {\n  return \"\\n    \".concat(H1, \"\\n    \").concat(H2, \"\\n\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (mainPage);\n\n//# sourceURL=webpack:///./src/js/pages/mainPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar H1 = \"<h1>If you're a happy person around food, you can be a professional chef. It's fueled by passion.\\n</h1>\";\nvar H2 = '<h2>-Ranveer Brar</h2>';\n\nvar mainPage = function mainPage() {\n  return \"\\n    \".concat(H1, \"\\n    \").concat(H2, \"\\n\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (mainPage);\n\n//# sourceURL=webpack:///./src/js/pages/mainPage.js?");
 
 /***/ }),
 
@@ -189,7 +189,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar H1 = '<h1>Just Another Re
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar H1 = '<h1>Menu</h1>';\n\nvar menuPage = function menuPage() {\n  return \"\\n    \".concat(H1, \"\\n\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (menuPage);\n\n//# sourceURL=webpack:///./src/js/pages/menuPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar imgs = \"\\n<img src=\\\"./imgs/meal1.png\\\">\\n<img src=\\\"./imgs/meal2.png\\\">\\n<img src=\\\"./imgs/meal3.png\\\">\\n\";\n\nvar menuPage = function menuPage() {\n  return \"\\n    \".concat(imgs, \"\\n\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (menuPage);\n\n//# sourceURL=webpack:///./src/js/pages/menuPage.js?");
 
 /***/ }),
 

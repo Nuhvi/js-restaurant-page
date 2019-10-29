@@ -1,5 +1,6 @@
-const H1 = '<h1>Just Another Restaurant!</h1>';
-const H2 = '<h2>Nothing Special Really!</h2>';
+const H1 = `<h1>If you're a happy person around food, you can be a professional chef. It's fueled by passion.
+</h1>`;
+const H2 = '<h2>-Ranveer Brar</h2>';
 
 const mainPage = () => `
     ${H1}

@@ -1,7 +1,11 @@
-const H1 = '<h1>Menu</h1>';
+const imgs = `
+<img src="./imgs/meal1.png">
+<img src="./imgs/meal2.png">
+<img src="./imgs/meal3.png">
+`;
 
 const menuPage = () => `
-    ${H1}
+    ${imgs}
 `;
 
 export default menuPage;
